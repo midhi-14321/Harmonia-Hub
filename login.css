@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body,html{
+    width: 100%;
+   min-height:100%;
+    
+}
+.container{
+    min-width:100%;
+   min-height: 100vh;
+    display: flex;
+    /* border: 2px solid black; */
+   /* background-color: black; */
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+.container1{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 3%;
+    background: url("https://pics.craiyon.com/2024-03-05/YNNRDIgdQuSH_bXDCUGu0w.webp");
+    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+    background-color: rgb(0, 0, 0,0.5);
+    box-shadow: inset -5px -5px rgb(0, 0, 0,0.5);
+    overflow: hidden;
+    
+    
+    
+   
+}
+
+
+
+
+
+
+input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+    
+input:hover{
+   
+    background-color: rgb(0, 0, 0,0.5);
+    color: white;
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+   
+} 
+.image{
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1{
+    display: flex;  
+    border: 2px solid black;
+    margin: 3px;
+   
+}
