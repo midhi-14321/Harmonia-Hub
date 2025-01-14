@@ -30,8 +30,9 @@ body {
     height: 150px;
     width: 150px;
     position: relative;
-    left: 60%;
+    left: 59%;
     top: -100px;
+   
 }
 
 .main {
@@ -41,7 +42,7 @@ body {
 
 .form {
     width: fit-content;
-    height: 60vh;
+    height: 60%;
     padding: 20px;
     position: relative;
     top: -30px;
@@ -52,6 +53,7 @@ body {
     transition: border 0.3s ease-in-out;
     border: none;
     overflow: hidden;
+
 
 }
 
