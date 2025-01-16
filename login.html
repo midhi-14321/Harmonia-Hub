@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="./login.css">
+    <script type="module" src="./login.js" defer></script>
+    
+    <script src="login.js"></script>
 </head>
 <body>
     <div class="container">
+
         <form action="./product.html">
+
             <div class="container1">
+
                 <h1>Login form</h1>
-            <label style="color: white;" for="Email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z\d]+@(gmail|yahoo|outlook).(com|co|in)" required" title="please enter this formate aabyggg@gmail.com">
-            <label style="color:white;" for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="password"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+                <label style="color: white;" for="Email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z\d]+@(gmail|yahoo|outlook)+\.(com|in|org|co)" required title="please enter this formate aabyggg@gmail.com">
+                <label style="color:white;" for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[$%&#@]).{8,16}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
        
             <div class="container2">
-            <input type="submit" value="login">
+            <input type="submit" id="login" value="login">
         </div> 
         </form>
+        
 
     </div>
     
