@@ -10,7 +10,7 @@ body {
     grid-template-rows: 730px 1fr;
     gap: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* font-family: "Amazon Ember", Arial, sans-serif; */
+    font-family: "Amazon Ember", Arial, sans-serif;
 }
 
 .back-ground {
@@ -32,6 +32,15 @@ body {
     margin: 0 auto;
     filter: grayscale(50%);
 
+}
+.back-ground>a{
+    text-decoration: none;
+    color:white;
+    background-color:blueviolet;
+    padding:10px;
+    margin: 10px;
+    border-radius: 7px;
+    align-self: flex-start;
 }
 
 .grid-container {
@@ -109,7 +118,7 @@ body {
 }
 
 .rating-value {
-    font-size: 14px;
+    font-size: 1rem;
     color: white;
     font-weight: bold;
     margin-right: 5px;
@@ -142,7 +151,6 @@ body {
     color: #999;
     text-decoration: line-through;
     margin-left: 8px;
-
 }
 
 .discount {
@@ -158,7 +166,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0,0.5);
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.5);
     transform: scale(1.01);
 }
 

@@ -1,101 +1,155 @@
-* {
-    padding: 0;
+body {
     margin: 0;
-    box-sizing: border-box;
-
-}
-
-body,
-html {
-    width: 100%;
-    min-height: 100%;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-
-}
-
-.container {
-    min-width: 100%;
-    min-height: 100vh;
-    display: flex;
-    /* border: 2px solid black; */
-    /* background-color: black; */
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-}
-
-
-
-.container1 {
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 3%;
-    background: url("https://pics.craiyon.com/2024-03-05/YNNRDIgdQuSH_bXDCUGu0w.webp");
-    background-position: center, center;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: center, center;
-    background-color: rgb(0, 0, 0, 0.5);
-    box-shadow: inset -5px -5px rgb(0, 0, 0, 0.5);
-    overflow: hidden;
-
-
-
-
-}
-
-
-
-
-
-
-input {
-    padding: 10px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    outline: none;
-    border: none;
-    transition: 0.3s ease;
-}
-
-input:hover {
-
-    background-color: rgb(0, 0, 0, 0.5);
-    color: white;
-
-}
-
-h1 {
-    color: white;
-    text-align: center;
-
-}
-
-.image {
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Amazon Ember", Arial, sans-serif;
 }
 
-.image1 {
-    display: flex;
-    border: 2px solid black;
-    margin: 3px;
+.login-container {
+    position: relative;
+    width: 30%;
+}
 
+.login-box {
+    background-color: #1e1e1e43;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100%;
+    transition: all 0.4s ease;
+    box-shadow: 1px 2px 53px 15px rgba(160, 159, 159, 0.5);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.login-button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-login>a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: 50%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.forgot {
+    width: 50%;
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.forgot:hover {
+    background-color: #007bffd8;
+}
+
+.social-login>a:hover {
+    background-color: #007bffd8;
+}
+
+.login-container::before,
+.login-container::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.login-container::before {
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(135deg, #1e90ff, #00ced1);
+    top: -80px;
+    left: -80px;
+}
+
+.login-container::after {
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(135deg, #ff4500, #ffa500);
+    bottom: -130px;
+    right: -80px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 1.1rem;
+}
+
+input:focus {
+    background-color: rgba(11, 11, 11, 0.506);
+    border: 2px solid #0777e8cf;
+}
+
+.login-box:hover {
+    box-shadow: 1px 2px 53px 15px rgba(160, 159, 159, 0.75);
+    transform: scale(1.01);
 }

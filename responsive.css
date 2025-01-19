@@ -1,0 +1,310 @@
+@media screen and (max-width : 1250px) {
+    .login-container {
+        width: 40%;
+    }
+
+    .login-button {
+        width: 95%;
+    }
+
+    /* register */
+    .login-form {
+        padding: 8px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .login-container {
+        width: 50%;
+    }
+
+    .login-button {
+        width: 94%;
+    }
+
+    /* register */
+    .login-form {
+        padding: 8px;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .login-container {
+        width: 70%;
+    }
+
+    .login-container::before,
+    .login-container::after {
+        display: none;
+    }
+
+    .login-button {
+        width: 93%;
+    }
+
+    .social-login>a {
+        padding: 8px;
+        width: 35%;
+    }
+
+    .social-login {
+        margin-top: 20px;
+    }
+
+    .forgot {
+        padding: 8px;
+        width: 35%;
+    }
+
+    /* register */
+    .login-form {
+        padding: 8px;
+        width: 60%;
+    }
+
+    /* Products */
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 1fr;
+        gap: 20px;
+        font-family: "Amazon Ember", Arial, sans-serif;
+    }
+
+    .back-ground {
+        background-image: url("./Background-image.png");
+        /* background-image: url("https://static.vecteezy.com/system/resources/previews/032/935/554/non_2x/classical-elegance-violin-on-abstract-ornate-backdrop-free-photo.jpg"); */
+    }
+
+    .back-ground>img {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .image-space {
+        aspect-ratio: 1/1;
+    }
+
+    .product-image {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .product-details {
+        width: 90%;
+        height: 100%;
+    }
+
+    .card-8 h3 {
+        line-height: 1.5;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+    }
+
+    .rating {
+        margin: 0px;
+    }
+
+    .rating-value {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    .rating-count {
+        font-size: 1rem;
+    }
+
+    .current-price {
+        font-size: 1rem;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .discount {
+        font-size: 1rem;
+    }
+
+    .market {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .login-container {
+        width: 80%;
+    }
+
+    .login-container::before,
+    .login-container::after {
+        display: none;
+    }
+
+    .login-button {
+        width: 95%;
+    }
+
+    .social-login>a {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+    .social-login {
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    .forgot {
+        font-size: 1rem;
+        width: 45%;
+    }
+
+    /* register */
+    .login-form {
+        padding: 8px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    body {
+        width: 100%;
+    }
+
+    .login-container {
+        width: 80%;
+    }
+
+    .login-box {
+        padding: 10px;
+    }
+
+    .login-container::before,
+    .login-container::after {
+        display: none;
+    }
+
+    .login-button {
+        width: 95%;
+    }
+
+    .social-login>a {
+        width: 45%;
+    }
+
+    .social-login {
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    .forgot {
+        width: 45%;
+    }
+
+    /* Register */
+    .login-form {
+        padding: 8px;
+        width: 80%;
+    }
+
+    /* products */
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+        gap: 20px;
+        font-family: "Amazon Ember", Arial, sans-serif;
+    }
+
+    .back-ground {
+        background-image: url("./Background-image.png");
+        /* background-image: url("https://static.vecteezy.com/system/resources/previews/032/935/554/non_2x/classical-elegance-violin-on-abstract-ornate-backdrop-free-photo.jpg"); */
+    }
+
+    .back-ground>img {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .product-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-details {
+        width: 90%;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+    }
+
+    .rating {
+        margin: 0px;
+    }
+
+    .rating-value {
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+
+    .rating-count {
+        font-size: 0.7rem;
+    }
+
+    .current-price {
+        font-size: 0.7rem;
+    }
+
+    .original-price {
+        font-size: 0.7rem;
+    }
+
+    .discount {
+        font-size: 0.8rem;
+    }
+
+    .market {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    /* login */
+    .login-container {
+        width: 90%;
+    }
+
+    /* register */
+    .login-form {
+        padding: 8px;
+        width: 85%;
+    }
+
+}
