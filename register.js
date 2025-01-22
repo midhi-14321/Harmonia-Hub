@@ -61,10 +61,18 @@ submit.addEventListener("click", function (event) {
       set(ref(database, "users/" + user.uid), {
         email: email,
         password: password,
-      });
-
-      alert("Account created successfully!");
-      window.location.href = "./login.html";
+      })
+        // alert("Account created successfully!");
+        // window.location.href = "./login.html";
+        .then(() => {
+          console.log("User data successfully written to database!");
+          alert("Account created successfully!");
+          window.location.href = "./login.html"; // Redirect
+        })
+        .catch((dbError) => {
+          console.error("Database write error: ", dbError);
+          alert("Failed to save user data. Please check your database rules.");
+        });
     })
     .catch((error) => {
       const errorMessage = error.message;
