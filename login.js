@@ -18,6 +18,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// Define demo credentials
+const demoCredentials = {
+  email: "demo@gmail.com",
+  password: "Demo@123",
+};
+
 const loginButton = document.getElementById("login");
 loginButton.addEventListener("click", function (event) {
   event.preventDefault();
@@ -34,6 +40,13 @@ loginButton.addEventListener("click", function (event) {
 
   if (!password) {
     alert("Please enter your password.");
+    return;
+  }
+
+  // Check if the entered credentials match demo credentials
+  if (email === demoCredentials.email && password === demoCredentials.password) {
+    alert("Login successful with demo credentials!");
+    window.location.href = "./product.html";
     return;
   }
 
